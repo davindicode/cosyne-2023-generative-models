@@ -1,0 +1,6 @@
+torch>=1.9
+jupyter
+numpy 
+scipy
+matplotlib
+scikit-learn
