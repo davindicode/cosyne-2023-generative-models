@@ -16,7 +16,7 @@ A central goal of systems neuroscience is to understand how high-dimensional neu
 - **Universal count model** ([Liu and Lengyel, 2021](https://proceedings.neurips.cc/paper/2021/hash/6f5216f8d89b086c18298e043bfe48ed-Abstract.html))
 - **Manifold GPLVM** ([Jensen et al., 2020](https://proceedings.neurips.cc/paper/2020/hash/fedc604da8b0f9af74b6cfc0fab2163c-Abstract.html))
 
-Other models...
+Other models [colab](https://colab.research.google.com/drive/15YK-TyWjCCfcVDPxiTOUYbMimBZN1EL7?usp=sharing)
 
 
 
