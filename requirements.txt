@@ -1,4 +1,5 @@
 torch>=1.9
+jax[cpu]
 jupyter
 numpy 
 scipy
