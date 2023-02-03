@@ -50,6 +50,11 @@ Click on a section to expand it.
   with...
 </details>
 
+Installing ssm : 
+git clone https://github.com/lindermanlab/ssm
+cd ssm
+pip install numpy cython
+pip install -e .
 
 
 ## Acknowledgements

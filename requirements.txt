@@ -5,3 +5,5 @@ numpy
 scipy
 matplotlib
 scikit-learn
+dynamax
+autograd
