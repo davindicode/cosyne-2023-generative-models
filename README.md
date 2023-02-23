@@ -8,16 +8,16 @@ A central goal of systems neuroscience is to understand how high-dimensional neu
 
 ## Example notebooks
 
-We provide three example notebook which implements and discusses a range of generative models commonly used in neuroscience.
+We provide three example notebooks which implement and discuss a range of generative models commonly used in neuroscience.
 
 *1. Regression*\
 This notebook considers methods used for regression - the case where we have both some observations and set of regressors that we think can predict our observations.
-We start from the simple case of linear regression and reformulate it as a Bayesian method which can be generalized to the more complicated but powerful *Gaussian process* regression (see https://www.youtube.com/watch?v=cQAPIlMeL_g for a more thorough overview of the use of Gaussian processes in systems neuroscience).
+We start from the simple case of linear regression and reformulate it as a Bayesian method, which can be generalized to the more complicated but powerful *Gaussian process* regression (see https://www.youtube.com/watch?v=cQAPIlMeL_g for a more thorough overview of the use of Gaussian processes in systems neuroscience).
 
 *2. Latent variable models (lvms)*\
 Having treated the case of regression, we then move on to latent variable models. This *unsupervised learning* setting generalizes regression to the case where we do now know the regressors but instead have to *infer* them from the data.
 This inference process is often complicated, which calls for simplifying assumptions such as Gaussianity or linearity.
-In this notebook, we consider both linear and non-linear method and look at the importance of such modelling choices for analysing high-dimensional data.
+In this notebook, we consider both linear and non-linear method and look at the importance of such modelling choices when analysing high-dimensional data.
 
 *3. Discrete state spaces*\
 In both of the above cases, we worked with *continuous* state spaces.
@@ -26,11 +26,16 @@ In this notebook, we start from the simple Hidden Markov Model for inferring dis
 
 ## Generative models
 
-- **iLQR-VAE** ([Schimel et al., 2022](https://www.biorxiv.org/content/10.1101/2021.10.07.463540v2.abstract))
-- **Scalable Bayesian GPFA** ([Jensen et al., 2021](https://proceedings.neurips.cc/paper/2021/hash/58238e9ae2dd305d79c2ebc8c1883422-Abstract.html))
+Opponent control of behavior by dorsomedial striatal pathways depends on task demands and internal state (Bolkan, Stone et al, 2022) 
+A probabilistic framework for task-aligned intra- and inter-area neural manifold estimation (Balzani et al, 2022)
+- **Review of linear Gaussian LVMs** ([Roweis & Ghahramani, 1999](https://ieeexplore.ieee.org/abstract/document/6790691))
+- **Gaussian process factor analysis** ([Yu et al., 2009](https://proceedings.neurips.cc/paper/2008/hash/ad972f10e0800b49d76fed33a21f6698-Abstract.html))
+- **Bayesian GPFA** ([Jensen et al., 2021](https://proceedings.neurips.cc/paper/2021/hash/58238e9ae2dd305d79c2ebc8c1883422-Abstract.html))
+- **Gaussian process latent variable models** ([Wu et al., 2017](https://proceedings.neurips.cc/paper/2017/hash/b3b4d2dbedc99fe843fd3dedb02f086f-Abstract.html))
+- **Manifold GPLVMs** ([Jensen et al., 2020](https://proceedings.neurips.cc/paper/2020/hash/fedc604da8b0f9af74b6cfc0fab2163c-Abstract.html))
 - **Universal count model** ([Liu and Lengyel, 2021](https://proceedings.neurips.cc/paper/2021/hash/6f5216f8d89b086c18298e043bfe48ed-Abstract.html))
-- **Manifold GPLVM** ([Jensen et al., 2020](https://proceedings.neurips.cc/paper/2020/hash/fedc604da8b0f9af74b6cfc0fab2163c-Abstract.html))
-
+- **LFADS** ([Pandarinath et al., 2018](https://www.nature.com/articles/s41592-018-0109-9)) 
+- **iLQR-VAE** ([Schimel et al., 2022](https://www.biorxiv.org/content/10.1101/2021.10.07.463540v2.abstract))
 
 ## Run locally 💻 
 
