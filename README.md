@@ -16,7 +16,7 @@ We provide three example notebooks which implement and discuss a range of genera
 
 **1. Regression**\
 This notebook considers methods used for regression - the case where we have both some observations and set of regressors that we think can predict our observations.
-We start from the simple case of linear regression and reformulate it as a Bayesian method, which can be generalized to the more complicated but powerful *Gaussian process* regression (see https://www.youtube.com/watch?v=cQAPIlMeL_g for a more thorough overview of the use of Gaussian processes in systems neuroscience).
+We start from the simple case of linear regression and reformulate it as a Bayesian method, which can be generalized to the more complicated but powerful *Gaussian process* regression (see this [video](https://www.youtube.com/watch?v=cQAPIlMeL_g) for a more thorough overview of the use of Gaussian processes in systems neuroscience).
 
 **2. Latent variable models (lvms)**\
 Having treated the case of regression, we then move on to latent variable models. This *unsupervised learning* setting generalizes regression to the case where we do now know the regressors but instead have to *infer* them from the data.
@@ -31,27 +31,47 @@ In this notebook, we start from the simple Hidden Markov Model for inferring dis
 <details>
 <summary><b>Instructions to run locally 💻 </b></summary>
 
-To run the notebooks, we need to install software dependencies in Python 3 (3.7 or higher).
+To run the notebooks, we need to install software dependencies in Python 3 (3.7 or higher). Note for Windows one has to [do some more work](https://github.com/cloudhan/jax-windows-builder) to install JAX. Open the terminal: 
     
-1. First, open the terminal and create a Python 3 virtual environment 
+1. Create a Python 3 virtual environment in a directory of your choice 
 
 ```
 mkdir /path_to_environment/
 python3 -m venv /path_to_environment/
 ```
     
-2. Now activate it 
+2. Activate the new environment 
     
 ```
 . /path_to_environment/bin/activate
 ```
     
-3. Finally, install the required dependencies 
+3. Install the required dependencies 
     
 ```
 python3 -m pip install -r requirements.txt
 ```
+    
+4. Add the new environment to Jupyter kernels 
+
+```
+python3 -m ipykernel install --user --name=cosyne_2023
+```
+    
+5. We also make use of the [mgplvm](https://github.com/tachukao/mgplvm-pytorch/tree/cosyne2023) and [ssm](https://github.com/lindermanlab/ssm) libraries, which can be installed from 
+
+```
+cd ..
+python3 -m pip install git+https://github.com/tachukao/mgplvm-pytorch@cosyne2023
+git clone https://github.com/lindermanlab/ssm.git
+cd ssm
+python3 -m pip install numpy cython
+python3 -m pip install -e .
+cd ../cosyne-2023-generative-models/
+```
    
+6. Now one should be able to run the notebooks with all dependencies available using the `cosyne_2023` IPython kernel.
+    
 </details>
 
 
