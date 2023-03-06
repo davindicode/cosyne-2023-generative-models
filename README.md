@@ -4,6 +4,7 @@
 
 [Website](https://sites.google.com/cam.ac.uk/cosyne-generative-workshop/)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7701723.svg)](https://doi.org/10.5281/zenodo.7701723)
 
 ## Introduction
 
@@ -100,4 +101,4 @@ We are also grateful to Ta-Chu Kao, Guillaume Hennequin, Máté Lengyel, and man
 
 Please cite the Zenodo DOI.
 
-[![DOI](https://zenodo.org/badge/451483302.svg)](https://zenodo.org/badge/latestdoi/451483302)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7701723.svg)](https://doi.org/10.5281/zenodo.7701723)
