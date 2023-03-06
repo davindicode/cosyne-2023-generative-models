@@ -2,6 +2,9 @@
 
 *What I cannot create I do not understand: analyzing neural and behavioral data with generative models*
 
+[Website](https://sites.google.com/cam.ac.uk/cosyne-generative-workshop/)
+
+
 ## Introduction
 
 A central goal of systems neuroscience is to understand how high-dimensional neural activity relates to complex stimuli and behaviours. Recent advances in neural and behavioural recording techniques have enabled routine collection of large datasets to answer these questions. With access to such rich data, we are now able to describe activity at the level of neural populations rather than individual neurons, and we can look at the neural underpinnings of increasingly complex and naturalistic behaviours. Unfortunately, it can be challenging to extract interpretable structure from such high-dimensional, often noisy, data. Generative modelling is a powerful approach from probabilistic machine learning that can reveal this structure by learning the statistical properties of the recorded data, often under the assumption that the high-dimensional observations arise from some lower-dimensional ‘latent’ process. Moreover, constructing such generative models makes it possible to build prior knowledge about the data directly into the analysis pipeline, such as multi-region structure or temporal continuity. This makes it possible both to make more efficient use of the available data by building in appropriate inductive biases, and to make the models more interpretable by shaping them according to the known structure of the data. Given the wealth of advances in generative modelling for systems neuroscience in recent years, we think the time is ripe to review this progress and discuss both challenges and opportunities for the future.
@@ -28,18 +31,19 @@ In this notebook, we start from the simple Hidden Markov Model for inferring dis
 <details>
 <summary><b>Instructions to run locally 💻 </b></summary>
 
-To run the notebooks, we need to install software dependencies in Python 3.
+To run the notebooks, we need to install software dependencies in Python 3 (3.7 or higher).
     
-1. First, open the terminal and set up a Python 3 virtual environment 
+1. First, open the terminal and create a Python 3 virtual environment 
 
 ```
-python3 -m venv /path/environment
+mkdir /path_to_environment/
+python3 -m venv /path_to_environment/
 ```
     
 2. Now activate it 
     
 ```
-. /path/environment/bin/activate
+. /path_to_environment/bin/activate
 ```
     
 3. Finally, install the required dependencies 
@@ -64,8 +68,7 @@ python3 -m pip install -r requirements.txt
 - **iLQR-VAE** ([Schimel et al., 2022](https://www.biorxiv.org/content/10.1101/2021.10.07.463540v2.abstract))
 
 - **Bayesian Learning and Inference in Recurrent Switching Linear Dynamical Systems** ([Linderman et al., 2017](https://proceedings.mlr.press/v54/linderman17a.html))
-Opponent control of behavior by dorsomedial striatal pathways depends on task demands and internal state (Bolkan, Stone et al, 2022) 
-A probabilistic framework for task-aligned intra- and inter-area neural manifold estimation (Balzani et al, 2022)
+
 
 ## Acknowledgements
 
